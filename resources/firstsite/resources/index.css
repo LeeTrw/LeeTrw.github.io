@@ -1,0 +1,246 @@
+html {
+    text-align: center;
+    width: 100%;
+    background-color: darkgray;
+}
+
+body {
+    background-image: url('../resources/images/gearsborderopac2.jpg');
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bruno Ace SC', cursive;
+}
+
+h2 {
+    text-decoration: underline;
+    padding-top: 5rem;
+}
+
+p {
+    font-family: 'Ysabeau', sans-serif;
+}
+
+body {
+    margin: 0;
+}
+
+
+/* nav bar */
+
+.navbar {
+    height: 50px;
+    border-bottom: 3px solid darkgrey;
+    background-image: url('../resources/images/wrenchborder.jpg');
+    background-repeat: repeat;
+    background-size: contain;
+    position: fixed;
+    width: 100%;
+}
+
+.navcontent {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1rem;
+    margin: 0;
+    margin-right: 1rem;
+    font-family: 'Bruno Ace SC', cursive;
+}
+
+.navcontent a {
+    background-color: black;
+    border-radius: 2rem;
+    padding: 0.5rem;
+    color: white;
+    margin: auto;
+    margin-top: 0.25rem;
+}
+
+.navcontent a:hover {
+    background-color: darkgray;
+    color: black;
+    cursor: pointer;
+}
+
+/* logo and background image */
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40rem;
+    background-image: url('../resources/images/logo-background.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-bottom: 3px solid darkgrey;
+    flex-shrink: 1;
+    
+}
+
+.logo-container img {
+    border: 3px solid darkgray;
+    border-radius: 15%;
+    width: 80%;
+    flex-shrink: 1;
+    flex-basis: content;
+    margin-top: 4rem;
+}
+
+/* Mission and about us*/
+.mission {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+.mission p {
+    background-color: lightgray;
+    border-radius: 2rem;
+    max-width: 40rem;
+    padding: 2rem;
+    margin-left: auto;
+    margin-right: auto;
+    border: 2px solid black;
+}
+
+.about {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.about p {
+    background-color: lightgray;
+    border-radius: 2rem;
+    max-width: 50rem;
+    padding: 2rem;
+    margin-left: auto;
+    margin-right: auto;
+    border: 2px solid black;
+}
+
+
+/*services*/
+.services {
+    display: flex;
+    width: 85%;
+    background-color: lightgray;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    flex-wrap: wrap;
+    border-radius: 4rem;
+    flex-grow: 1;
+    border: 2px solid black;
+}
+
+.serve {
+    width: 80%;
+    padding: 2rem 0;
+}
+
+.services-img {
+    
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    flex-wrap: wrap;
+    
+}
+
+.services-img img {
+    width: 12.5rem; 
+    height: 18.75rem;
+    padding: 0.2rem 0.5rem;
+    object-fit: cover;
+    border-radius: 3rem;
+    flex-basis: 1;
+}
+
+
+/*employees*/
+.employees-container {
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.staff {
+    width: 30rem;
+}
+
+.emp-img-container {
+    width: 30rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+}
+
+.emp-img-container img {
+    width: 100%;
+    object-fit: contain;
+    border-radius: 3rem;
+}
+
+.staff p {
+    background-color: lightgray;
+    border-radius: 3rem;
+    padding: 2rem;
+    border: 2px solid black;
+}
+
+@media only screen and (max-width: 760px) {
+    .employees-container {
+        width: 85%;
+        margin-left: auto;
+        margin-right: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+}
+
+
+.footer-container {
+    background-image: url('../resources/images/EUNF9638.JPG');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 20rem;
+    margin-top: 7rem;
+    display: flex;
+    justify-content: center;
+    border-top: 3px solid darkgray;
+}
+
+
+.footlabel {
+    background-color: black;
+    color: darkgray;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+    height: fit-content;
+    border-radius: 15%;
+    line-height: 0.5;
+}
+
+.footlabel a {
+    color: darkgray;
+}
+
+.footlabel a:hover {
+    color: lightgrey;
+}
+
+.footlabel img {
+    height: 10rem;
+    width: auto;
+    border-radius: 15%;
+}

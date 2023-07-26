@@ -2,6 +2,7 @@
 <html>
 <head>
     <link rel="stylesheet" href="./resources/index.css">
+    <link rel="icon" href="./resources/images/lt logo2.jpg" type="image/x-icon">
     <title>LT Portfolio</title>
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -11,6 +12,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;800&display=swap" rel="stylesheet">
+
+    <script src="./resources/index.js" defer></script>
 </head>
 
 <Body style="margin: 0;">
@@ -18,18 +21,25 @@
     <!-----------------------------navigation bar---------------------------------->
         <nav class="nav-bar"> 
             <div class="logo-container">
-                <img src="./resources/images/lt logo.png" alt="My personal Logo">
+                <img src="./resources/images/lt logo2.jpg" alt="My personal Logo">
             </div>
 
             <div class="menu">
-                <a href="#abt" class="about">About Me</a>
-                <a class="skills">Skills</a>
-                <a class="projects">Projects</a>
-                <a class="contact">Contact</a>
+                <a href="#abt-jump" class="about">About Me</a>
+                <a href="#skl-jump" class="skills">Skills</a>
+                <a href="#prj" class="projects">Projects</a>
+                <a href="#cnt" class="contact">Contact</a>
                 <div class="animation start-about"></div>
+            </div>
+            <div class="gitlink-con">
+                <a href="https://github.com/LeeTrw?tab=repositories" class="gitlink"><ion-icon name="logo-github"></ion-icon></a>
             </div>    
         </nav>
+
         <!-- make a sticky bar at the bottom left that comes in with scroll-->
+        
+
+
         <!-- menu on scroll https://www.youtube.com/watch?v=aGMPd1vs_PE-->
 
         <!--mobile nav bar ---- https://www.youtube.com/watch?v=5zkOWf5_lAo-->
@@ -54,15 +64,27 @@
 
     <main> 
     <!----------------------------------about me------------------------------------->    
-        <section>
-            <h2 id="abt">About Me</h2>
+    <div class="sticky">
+        <ul class="sticky-items">
+            <li class="item-disp"><a class="display1"><ion-icon name="arrow-up-sharp"></ion-icon></a><a href="#" class="display2">Top</a></li>
+            <li class="item-disp"><a class="display1"><ion-icon name="extension-puzzle-outline"></ion-icon></a><a href="#skl-jump" class="display2">Skills</a></li>
+            <li class="item-disp"><a class="display1"><ion-icon name="folder-open-outline"></ion-icon></a><a href="#prj" class="display2">Projects</a></li>
+            <li class="item-disp"><a class="display1"><ion-icon name="at-outline"></ion-icon></a><a href="#cnt" class="display2">Contact</a></li>
+            <li><ion-icon name="moon-outline"></ion-icon><ion-icon name="sunny-outline"></ion-icon></li>
+            <div class="sticky-line"></div>
+        </ul>
+    </div>    
+
+    <div id="abt-jump"></div>
+    <section id="abt-bck">
+            <h2>About Me</h2>
                 <div class="aboutme">
                     <p>Hi, my name is Lee and I am currently working a full-time job and dedicating my free 
-                        time to learn HTML, CSS and JavaScript in the hope of changing my career.<br><br> 
+                        time to learn HTML, CSS and JavaScript in the hope of changing my career. 
                         I am learning on CodeCademy and practicing building interactive and 
-                        interesting things for the web. I have found a real love for coding because of the 
+                        interesting things for the web.<br><br> I have found a real love for coding because of the 
                         challenges it brings, such as testing my problem solving skills, which my current career does 
-                        not do.<br><br> My goal is to find a role within a company that can challenge me, help me
+                        not do. My goal is to find a role within a company that can challenge me, help me
                         expand my skills and start me on the road to my new career.<br>
                     </p>
 
@@ -72,96 +94,96 @@
                 </div>
         </section>
 
-
-        <section>
+        <div id="skl-jump"></div>
+        <section id="skl-bck"><!--skills-->
             <h2>Skills</h2>
-            <div class="skll">    <!--skills-->
-                <div class="container">
-                    <div class="box1">
-                        <img src="./resources/images/HTML5.png" alt="">
+            <div class="skll-con">
+                    <div class="skll">
+                        <img class="web-img" src="./resources/images/HTML5.png" alt="">
+                        <img class="web-img" src="./resources/images/CSS3.png" alt="">
+                        <img class="java-img" src="./resources/images/JavaScript.png" alt="">
+                        <img class="node-img" src="./resources/images/node2.png" alt="">
+                        <img class="git-img" src="./resources/images/GitHub.png" alt="">
+                        <img class="git-img" src="./resources/images/gitbash.svg" alt="">
                     </div>
-                    <div class="box2">
-                        <p>bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla 
-                            bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla 
-                        </p>
-                    </div>
-                </div>    
+            </div>
             
-                <div class="container">
-                    <div class="box1">
-                        <img src="./resources/images/CSS3.png" alt="">
-                    </div>
-                    <div class="box2">
-                        <p>bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla 
-                            bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla 
-                        </p>
-                    </div>
-                </div> 
-            
-                <div class="container">
-                    <div class="box1">
-                        <img src="./resources/images/JavaScript.png" alt="">
-                    </div>
-                    <div class="box2">
-                        <p>bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla 
-                            bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla 
-                        </p>
-                    </div>
-                </div> 
-            
-                <div class="container">
-                    <div class="box1">
-                        <img src="./resources/images/GitHub.png" alt="">
-                    </div>
-                    <div class="box2">
-                        <p>bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla 
-                            bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla 
-                        </p>
-                    </div>
-                </div> 
+            <div class="desc">
+                <div class="web">
+                    <h3>Web Dev</h3>
+                    <p>I am able to create responsive websites with HTML and CSS. 
+                    Enhancing static sites with transitions and animations.</p>    
+                </div>
+                
+                <div class="java">
+                    <h3>JavaScript</h3> 
+                    <p>I can build features and augment websites using JavaScript, 
+                        an object-oriented programming language used for web interativity.</p>
+                </div>
 
-                <div class="container">
-                    <div class="box1">
-                        <img src="./resources/images/node2.png" alt="">
-                    </div>
-                    <div class="box2">
-                        <p>bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla 
-                            bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla 
-                        </p>
-                    </div>
-                </div> 
-
-                <div class="container">
-                    <div class="box1">
-                        <img src="./resources/images/gitbash.svg" alt="">
-                    </div>
-                    <div class="box2">
-                        <p>bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla 
-                            bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla 
-                        </p>
-                    </div>
-                </div> 
-
-                <div class="container">
-                    <div class="box1">
-                        <img src="./resources/images/vscode.png" alt="">
-                    </div>
-                    <div class="box2">
-                        <p>bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla 
-                            bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla 
-                        </p>
-                    </div>
-                </div> 
+                <div class="git">
+                    <h3>GitHub & Git</h3> 
+                    <p>I can integrate projects with Git and GitHub, a version control 
+                        web application that allows developers worldwide to store and manage code.</p>
+                </div>
             </div>
         </section>
 
-
-        <section> <!--https://www.youtube.com/watch?v=6QE8dXq9SOE&t=25s-->
-            
-            
+        <h2 id="prj">Projects</h2>
+        <section class="caro-con">
+            <div class="wrapper">
+                <i id="left" class="arrow arrow-left"><ion-icon name="arrow-back-circle-outline"></ion-icon></i>
+                <ul class="carousel">
+                    <li class="card">
+                        <div class="img"><img src="./resources/images/firstsite.jpg" alt="img" draggable="false"></div>
+                        <h4>My 1st Ever Website</h4>
+                        <span>A mechanics website for a side business my friend and I started during Coronavirus
+                            when times were tough. Only created for practice.</span>
+                            <a href="./resources/firstsite/index.html" target="_blank"><button class="caro-btn">Open</button></a>
+                    </li>
+                    <li class="card">
+                        <div class="img"><img src="./resources/images/ridingclub.jpg" alt="img" draggable="false"></div>
+                        <h4>VN Riding Club</h4>
+                        <span>A ficticious website for a riding club in Vietnam to showcase what the club is about and 
+                            what they offer.
+                        </span>
+                        <br>
+                        <a href="./resources/ridingclub/index.html" target="_blank"><button class="caro-btn">Open</button></a>
+                    </li>
+                    <li class="card">
+                        <div class="img"><img src="./resources/images/comingsoon.jpg" alt="img" draggable="false"></div>
+                        <h4>Coming Soon...</h4>
+                        <span>I am currently working on a few things so this space will be filled soon.</span>
+                        <br><br>
+                            <button class="caro-btn">Open</button>
+                    </li>
+                    <li class="card">
+                        <div class="img"><img src="./resources/images/comingsoon.jpg" alt="img" draggable="false"></div>
+                        <h4>Coming Soon...</h4>
+                        <span>I am currently working on a few things so this space will be filled soon.</span>
+                        <br><br>
+                            <button class="caro-btn">Open</button>
+                    </li>
+                    <li class="card">
+                        <div class="img"><img src="./resources/images/comingsoon.jpg" alt="img" draggable="false"></div>
+                        <h4>Coming Soon...</h4>
+                        <span>I am currently working on a few things so this space will be filled soon.</span>
+                        <br><br>
+                            <button class="caro-btn">Open</button>
+                    </li>
+                    <li class="card">
+                        <div class="img"><img src="./resources/images/comingsoon.jpg" alt="img" draggable="false"></div>
+                        <h4>Coming Soon...</h4>
+                        <span>I am currently working on a few things so this space will be filled soon.</span>
+                        <br><br>
+                            <button class="caro-btn">Open</button>
+                    </li>
+                </ul>
+                <i id="right" class="arrow arrow-right"><ion-icon name="arrow-forward-circle-outline"></ion-icon></i>
+            </div>   
         </section>
-
-    <section class="con-con">
+    
+    <section id="cnt" class="con-con">
         <div class="con-container">
             <div class="con-title">Contact Me</div>
             <form action="https://formsubmit.co/leetrewh@gmail.com" method="POST">
@@ -210,18 +232,18 @@
     </section>
 
 
-        <h3>Alternatively send your own email with the link below.</h3>
+        <h3 class="alter">Alternatively send your own email with the link below.</h3>
 
         <section class="sayhello">
         <button class="hello-btn"><a href="mailto:leetrewh@gmail.com">Say Hello<i class="hello-top"></i>
             <i class="hello-bot"></i></a></button>
         </section>
-        <br><br><br><br><br><br><br><br><br>
+        <br><br><br><br>
     </main>
 
     <footer>
-
-
+        <a href="https://github.com/LeeTrw?tab=repositories"><ion-icon name="logo-github"></ion-icon></a>
+        <p>Lee Trewhitt © 2023. All rights reserved.</p>
     </footer>
 
     <!--toggle light and dark ----- https://www.youtube.com/watch?v=ihCI3Mkp3GE-->
@@ -229,7 +251,8 @@
 
 
 
-
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 
 </Body>
 </html>
