@@ -138,7 +138,7 @@ nav a:nth-child(4):hover~.animation {
     transition: all 0.3s ease-in-out;
 }
 
-@media (max-width: 960px) {
+@media only screen and (max-width: 960px) {
     .menu a {
         font-size: 0.8rem;
     }
@@ -157,6 +157,11 @@ nav a:nth-child(4):hover~.animation {
     }
 }
 
+@media only screen and (max-width: 1080px) {
+    .menu, .gitlink {
+        display: none;
+    }
+}
 
 
 
@@ -199,6 +204,23 @@ main .sticky {
     margin-top: 0.2rem;
 }
 
+@media only screen and (max-width: 1080px) {
+    main .sticky {
+        display: none;
+    }
+}
+
+@media only screen and (max-height: 570px) {
+    main .sticky {
+        top: 55%;
+    }
+}
+
+@media only screen and (max-height: 400px) {
+    main .sticky {
+        display: none;
+    }
+}
 
 /* ------------------- title ------------------ */
 
@@ -219,9 +241,9 @@ header:before {
     content: '';
     position: absolute;
     top: 8px;
-    left: -5px; 
-    width: calc(100% + 11px);
-    height: calc(100% - 18px);
+    left: -7px; 
+    width: calc(100% + 14px);
+    height: calc(100% - 16px);
     background: #2c3e50;
     transition: 0.5s ease-in-out;
     transform: scaleY(1);
@@ -236,8 +258,8 @@ header:after {
     content: '';
     position: absolute;
     left: 8px;
-    top: -6px; 
-    height: calc(100% + 11px);
+    top: -7px; 
+    height: calc(100% + 14px);
     width: calc(100% - 18px);
     background: #2c3e50;
     transition: 0.5s ease-in-out;
@@ -259,6 +281,7 @@ header span {
     box-sizing: border-box;
     padding-top: 0.8rem;
     text-transform: uppercase;
+    z-index: 10;
 }
 
 .name {
@@ -267,6 +290,7 @@ header span {
     line-height: 0;
     font-family: 'Work Sans', sans-serif;
     font-weight: 400;
+    z-index: 10;
     
 }
 
@@ -275,9 +299,10 @@ header span {
     box-sizing: border-box;
     text-align: end;
     text-transform: uppercase;
+    z-index: 10;
 }
 
-@media (max-width: 960px) {
+@media only screen and (max-width: 960px) {
     header {
         height: 16rem;
     }
@@ -292,6 +317,48 @@ header span {
 
     .occupation {
         font-size: 1rem;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    header {
+        height: 12rem;
+        margin-bottom: 15rem;
+        margin-top: 10rem;
+    }
+    
+    .hi {
+        font-size: 0.8rem;
+    }
+
+    .name {
+        font-size: 1.4rem;
+    }
+
+    .occupation {
+        font-size: 0.8rem;
+    }
+}
+
+
+
+@media only screen and (max-width: 340px) {
+    header {
+        height: 10rem;
+        margin-bottom: 5rem;
+        margin-top: 6rem;
+    }
+    
+    .hi {
+        font-size: 0.6rem;
+    }
+
+    .name {
+        font-size: 1rem;
+    }
+
+    .occupation {
+        font-size: 0.6rem;
     }
 }
 
@@ -347,10 +414,30 @@ header span {
     object-fit: cover;
 }
 
-@media (max-width: 1080px)  {
+@media only screen and (max-width: 1080px)  {
     .aboutme {
         font-size: 1.1rem;
         width: 75%;
+    }
+
+    #abt-bck {
+        height: auto;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .aboutme {
+        font-size: 1.1rem;
+        width: 70%;
+        flex-direction: column;
+    }
+
+    .aboutme p {
+        margin-bottom: 2rem;
+    }
+
+    #abt-bck {
+        height: auto;
     }
 }
 
@@ -361,7 +448,7 @@ header span {
 
 #skl-bck {
     width: 100%;
-    height: 32rem;
+    height: auto;
     background-color: #34495e;
     border-top: 1px solid black;
     border-bottom: 1px solid black;
@@ -375,7 +462,6 @@ header span {
 }
 
 .skll-con {
-    flex-wrap: wrap;
     margin: 1rem 15% 2rem 16%;
     padding: 0.5rem 0.5rem;
     border-right: 3px solid white;
@@ -432,10 +518,43 @@ header span {
     transform-origin: left;
 }
 
-@media (max-width: 930px) {
+.dummy {
+    display: none;
+}
+
+@media only screen and (max-width: 930px) {
     .skll img {
         height: 5rem;
         width: auto;
+    }
+}
+   
+
+@media only screen and (max-width: 800px) {
+    .skll-con,
+    .desc {
+       display: none;
+    }
+  
+    .dummy {
+        display: contents;
+    }
+
+    .skll-con-mbl {
+        margin: 1rem 15% 2rem 15%;
+        padding: 0.5rem 0.5rem;
+        border-right: 3px solid white;
+    }
+
+    .mbl-img img {
+        height: 3rem;
+        width: auto;
+    }
+
+    .desc-mbl {
+        margin-bottom: 3rem;
+        font-size: 1.2rem;
+        border-bottom: 1px solid white;
     }
 }
 
@@ -611,13 +730,13 @@ header span {
   }
 
 
-@media screen and (max-width: 900px) {
+@media only screen and (max-width: 900px) {
     .wrapper .carousel {
         grid-auto-columns: calc((100% / 2) - 9px);
     }
 }
 
-@media screen and (max-width: 600px) {
+@media only screen and (max-width: 600px) {
     .wrapper .carousel {
         grid-auto-columns: 100%;
     }
@@ -795,7 +914,7 @@ form .con-row .textarea {
 }
 
 
-@media (max-width: 700px) {
+@media only screen and (max-width: 700px) {
     .con-container .text {
         font-size: 30px;
     }
