@@ -248,7 +248,6 @@ header:before {
     transition: 0.5s ease-in-out;
     transform: scaleY(1);
     transition-delay: 0.5s;
-    z-index: 2;
 }
 
 header:hover:before {
@@ -265,7 +264,6 @@ header:after {
     background: #2c3e50;
     transition: 0.5s ease-in-out;
     transform: scaleX(1);
-    z-index: 2;
 }
 
 header:hover:after {
@@ -277,6 +275,10 @@ header span {
     z-index: 3;
 }
 /*----------------- animation end -----------------*/
+
+.title-container {
+    z-index: 3;
+}
 
 .hi {
     font-size: 1.5rem;
@@ -290,9 +292,7 @@ header span {
     box-sizing: border-box;
     line-height: 0;
     font-family: 'Work Sans', sans-serif;
-    font-weight: 400;
-    
-    
+    font-weight: 400;    
 }
 
 .occupation {
@@ -337,6 +337,44 @@ header span {
 
     .occupation {
         font-size: 0.8rem;
+    }
+
+    header:before {
+        content: '';
+        position: absolute;
+        top: 8px;
+        left: -7px; 
+        width: calc(100% + 14px);
+        height: calc(100% - 16px);
+        background: #2c3e50;
+        transition: 0.5s ease-in-out;
+        transform: scaleY(1);
+        transition-delay: 0.5s;
+    }
+    
+    header:hover:before {
+        transform: scaleY(0);
+    }
+    
+    header:after {
+        content: '';
+        position: absolute;
+        left: 8px;
+        top: -7px; 
+        height: calc(100% + 14px);
+        width: calc(100% - 18px);
+        background: #2c3e50;
+        transition: 0.5s ease-in-out;
+        transform: scaleX(1);
+    }
+    
+    header:hover:after {
+        transform: scaleX(0);
+    }
+    
+    header span { 
+        position: relative;
+        z-index: 3;
     }
 }
 
@@ -477,7 +515,15 @@ header span {
 .skll img {
     height: 7rem;
     width: auto;
+    padding-bottom: 0.2rem;
 }
+
+.web-img,
+.java-img,
+.git-img {
+    border-bottom: 3px solid white;
+}
+
 
 .desc {
     margin: 0rem 15% 2rem 15%;
@@ -549,6 +595,7 @@ header span {
     .mbl-img img {
         height: 3rem;
         width: auto;
+        border: none;
     }
 
     .desc-mbl {
