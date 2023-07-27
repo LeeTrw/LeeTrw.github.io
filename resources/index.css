@@ -248,6 +248,7 @@ header:before {
     transition: 0.5s ease-in-out;
     transform: scaleY(1);
     transition-delay: 0.5s;
+    z-index: 2;
 }
 
 header:hover:before {
@@ -264,6 +265,7 @@ header:after {
     background: #2c3e50;
     transition: 0.5s ease-in-out;
     transform: scaleX(1);
+    z-index: 2;
 }
 
 header:hover:after {
@@ -281,7 +283,6 @@ header span {
     box-sizing: border-box;
     padding-top: 0.8rem;
     text-transform: uppercase;
-    z-index: 10;
 }
 
 .name {
@@ -290,7 +291,7 @@ header span {
     line-height: 0;
     font-family: 'Work Sans', sans-serif;
     font-weight: 400;
-    z-index: 10;
+    
     
 }
 
@@ -299,7 +300,6 @@ header span {
     box-sizing: border-box;
     text-align: end;
     text-transform: uppercase;
-    z-index: 10;
 }
 
 @media only screen and (max-width: 960px) {
