@@ -4,6 +4,27 @@ const gitimg = document.querySelector(".git-img");
 const web = document.querySelector(".web");
 const java = document.querySelector(".java");
 const git = document.querySelector(".git");
+const open = document.querySelector(".open");
+const close = document.querySelector(".close");
+const body = document.querySelector("body");
+const mblmenu = document.querySelector(".mbl-menu")
+
+body.onload = function () {
+    close.classList.add("hide"); 
+    mblmenu.classList.add("hide");
+}
+
+close.onclick = function () {
+    close.classList.add("hide");
+    open.classList.remove("hide");
+    mblmenu.classList.add("hide");
+}
+
+open.onclick = function () {
+    open.classList.add("hide");
+    close.classList.remove("hide");
+    mblmenu.classList.remove("hide");
+}
 
 webimg.onmouseenter = function(){
     web.classList.add("show"); 
