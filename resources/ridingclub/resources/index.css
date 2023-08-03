@@ -72,6 +72,11 @@ a {
     }
 }
 
+@media only screen and (max-width: 500px) {
+    .navbar-container {
+        font-size: 0.6rem;
+    }
+}
 
 
 /*-------------------Title Section--------------------*/
@@ -106,6 +111,15 @@ a {
 .titles p {
     font-size: 2.5rem;
     font-family: 'Caveat', cursive;
+}
+
+@media only screen and (max-width: 1080px){    
+    .titles h1 {
+        font-size: 3.5rem;
+    }
+    .titles p {
+        font-size: 1.8rem;
+    }
 }
 
 @media only screen and (max-width: 760px){
