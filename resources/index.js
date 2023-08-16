@@ -26,6 +26,8 @@ open.onclick = function () {
     mblmenu.classList.remove("hide");
 }
 
+// skills //
+
 webimg.onmouseenter = function(){
     web.classList.add("show"); 
 };
@@ -33,6 +35,15 @@ webimg.onmouseenter = function(){
 webimg.onmouseleave = function() {
     web.classList.remove("show");
 };
+
+webimg.addEventListener("focus", (event) => {
+    web.classList.add("show"); 
+});
+
+webimg.addEventListener("blur", (event) => {
+    web.classList.remove("show"); 
+});
+
 
 javaimg.onmouseenter = function(){
     java.classList.add("show"); 
@@ -42,6 +53,15 @@ javaimg.onmouseleave = function() {
     java.classList.remove("show");
 };
 
+javaimg.addEventListener("focus", (event) => {
+    java.classList.add("show"); 
+});
+
+javaimg.addEventListener("blur", (event) => {
+    java.classList.remove("show"); 
+});
+
+
 gitimg.onmouseenter = function(){
     git.classList.add("show"); 
 };
@@ -50,9 +70,18 @@ gitimg.onmouseleave = function() {
     git.classList.remove("show");
 };
 
+gitimg.addEventListener("focus", (event) => {
+    git.classList.add("show"); 
+});
+
+gitimg.addEventListener("blur", (event) => {
+    git.classList.remove("show"); 
+});
+
+
 
 const carousel = document.querySelector(".carousel");
-const arrowBtns = document.querySelectorAll(".wrapper i");
+const arrowBtns = document.querySelectorAll(".wrapper button");
 const firstCardWidth = carousel.querySelector(".card").offsetWidth;
 const carouselChildrens = [...carousel.children];
 

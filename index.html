@@ -31,13 +31,13 @@
                 <i class="close"><ion-icon name="add-outline"></ion-icon></i>
             </div>
 
-            <div class="mbl-menu">
+            <ul class="mbl-menu">
                 <li><a href="#abt-jump" class="about">About Me</a></li>
                 <li><a href="#skl-jump" class="skills">Skills</a></li>
                 <li><a href="#prj" class="projects">Projects</a></li>
                 <li><a href="#cnt" class="contact">Contact</a></li>
                 <li><a href="https://github.com/LeeTrw?tab=repositories" class="mbl-gitlink"><ion-icon name="logo-github"></ion-icon></a></li>
-            </div>
+            </ul>
 
             <div class="menu">
                 <a href="#abt-jump" class="about">About Me</a>
@@ -51,7 +51,7 @@
             </div>    
         </nav>
     <!--------------------------------title------------------------------------------>
-    <header><span>
+    <header><div class="outer-title">
         <div class="title-container">
             <div class="hi">
                 <p>Hi, my name is</p>
@@ -63,7 +63,7 @@
                 <p>I'm a full-stack developer</p>
             </div>
         </div>
-    </span></header>
+    </div></header>
 
 <main> 
     <!----------------------------------about me------------------------------------->    
@@ -73,14 +73,14 @@
             <li class="item-disp"><a class="display1"><ion-icon name="extension-puzzle-outline"></ion-icon></a><a href="#skl-jump" class="display2">Skills</a></li>
             <li class="item-disp"><a class="display1"><ion-icon name="folder-open-outline"></ion-icon></a><a href="#prj" class="display2">Projects</a></li>
             <li class="item-disp"><a class="display1"><ion-icon name="at-outline"></ion-icon></a><a href="#cnt" class="display2">Contact</a></li>
-            <div class="sticky-line"></div>
+            <li class="sticky-line"></li>
         </ul>
     </div>    
 
     <div id="abt-jump"></div>
     <section id="abt-bck">
             <h2>About Me</h2>
-                <div class="aboutme">
+                <div class="aboutme" tabindex="0">
                     <p>Hi, my name is Lee and I am currently working a full-time job and dedicating my free 
                         time to learn HTML, CSS and JavaScript in the hope of changing my career. 
                         I am learning on CodeCademy and practicing building interactive and 
@@ -91,7 +91,7 @@
                     </p>
 
                     <div class="headshot-container">
-                        <img src="./resources/images/headshot.png" alt="a headshot photo of myself">
+                        <img src="./resources/images/headshot.png" alt="A headshot photo of myself.">
                     </div>
                 </div>
         </section>
@@ -101,12 +101,12 @@
             <h2>Skills</h2>
             <div class="skll-con">
                     <div class="skll">
-                        <img class="web-img" src="./resources/images/HTML5.png" alt="">
-                        <img src="./resources/images/CSS3.png" alt="">
-                        <img class="java-img" src="./resources/images/JavaScript.png" alt="">
-                        <img src="./resources/images/node2.png" alt="">
-                        <img class="git-img" src="./resources/images/GitHub.png" alt="">
-                        <img src="./resources/images/gitbash.svg" alt="">
+                        <img class="web-img" src="./resources/images/HTML5.png" alt="The HTML5 Logo" tabindex="0">
+                        <img src="./resources/images/CSS3.png" alt="The CSS3 Logo">
+                        <img class="java-img" src="./resources/images/JavaScript.png" alt="The JavaScript Logo" tabindex="0">
+                        <img src="./resources/images/node2.png" alt="The Node Logo">
+                        <img class="git-img" src="./resources/images/GitHub.png" alt="The GitHub Logo" tabindex="0">
+                        <img src="./resources/images/gitbash.svg" alt="The Gitbash Logo">
                     </div>
             </div>
             
@@ -133,8 +133,8 @@
             <div class="dummy">
                 <div class="skll-con-mbl">
                     <div class="mbl-img">
-                        <img class="web-img" src="./resources/images/HTML5.png" alt="">
-                        <img class="web-img" src="./resources/images/CSS3.png" alt="">
+                        <img class="web-img" src="./resources/images/HTML5.png" alt="The HTML5 Logo">
+                        <img class="web-img" src="./resources/images/CSS3.png" alt="The CSS3 Logo">
                     </div>
 
                     <div class="desc-mbl">
@@ -144,8 +144,8 @@
                     </div>
 
                     <div class="mbl-img">
-                        <img class="java-img" src="./resources/images/JavaScript.png" alt="">
-                        <img class="node-img" src="./resources/images/node2.png" alt="">
+                        <img class="java-img" src="./resources/images/JavaScript.png" alt="The JavaScript Logo">
+                        <img class="node-img" src="./resources/images/node2.png" alt="The Node Logo">
                     </div>  
 
                     <div class="desc-mbl">
@@ -155,8 +155,8 @@
                     </div>
 
                     <div class="mbl-img">
-                        <img class="git-img" src="./resources/images/GitHub.png" alt="">
-                        <img class="git-img" src="./resources/images/gitbash.svg" alt="">
+                        <img class="git-img" src="./resources/images/GitHub.png" alt="The GitHub Logo">
+                        <img class="git-img" src="./resources/images/gitbash.svg" alt="The GitBash Logo">
                     </div>
 
                     <div class="desc-mbl">
@@ -168,58 +168,58 @@
             </div>
         </section>
 
-        
+        <!-----------------------projects------------------->
         <h2 id="prj">Projects</h2>
         <section class="caro-con">
             <div class="wrapper">
-                <i id="left" class="arrow arrow-left"><ion-icon name="arrow-back-circle-outline"></ion-icon></i>
+                <button id="left" class="arrow arrow-left"><ion-icon name="arrow-back-circle-outline"></ion-icon></button>
                 <ul class="carousel">
                     <li class="card">
-                        <div class="img"><img src="./resources/images/firstsite.jpg" alt="A screenshot of the website" draggable="false"></div>
+                        <div class="img"><img src="./resources/images/firstsite.jpg" alt="A screenshot of a fictional mechanics website I made as an early project." draggable="false"></div>
                         <h4>An Early Project</h4>
                         <span>A mechanics website for a side business my friend and I started during Coronavirus
                             when times were tough. Only created for practice.</span>
-                            <a href="./resources/firstsite/index.html" target="_blank"><button class="caro-btn">Open</button></a>
+                            <a class="caro-btn" href="./resources/firstsite/index.html" target="_blank">Open</a>
                     </li>
                     <li class="card">
-                        <div class="img"><img src="./resources/images/ridingclub.jpg" alt="A screenshot of the website" draggable="false"></div>
+                        <div class="img"><img src="./resources/images/ridingclub.jpg" alt="A screenshot of a fictional website for a motorcycle riding club I made to practice HTML and CSS." draggable="false"></div>
                         <h4>VN Riding Club</h4>
                         <span>A ficticious website for a riding club in Vietnam to showcase what the club is about and 
                             what they offer.
                         </span>
                         <br>
-                        <a href="./resources/ridingclub/index.html" target="_blank"><button class="caro-btn">Open</button></a>
+                        <a class="caro-btn" href="./resources/ridingclub/index.html" target="_blank">Open</a>
                     </li>
                     <li class="card">
-                        <div class="img"><img src="./resources/images/comingsoon.jpg" alt="A coming soon image" draggable="false"></div>
+                        <div class="img"><img src="./resources/images/comingsoon.jpg" alt="A coming soon image that says site under construction with a road sign depicting a man working." draggable="false"></div>
                         <h4>Coming Soon...</h4>
                         <span>I am currently working on a few things so this space will be filled soon.</span>
                         <br><br>
-                            <button class="caro-btn">Open</button>
+                            <a class="caro-btn">Open</a>
                     </li>
                     <li class="card">
-                        <div class="img"><img src="./resources/images/comingsoon.jpg" alt="A coming soon image" draggable="false"></div>
+                        <div class="img"><img src="./resources/images/comingsoon.jpg" alt="A coming soon image that says site under construction with a road sign depicting a man working." draggable="false"></div>
                         <h4>Coming Soon...</h4>
                         <span>I am currently working on a few things so this space will be filled soon.</span>
                         <br><br>
-                            <button class="caro-btn">Open</button>
+                            <a class="caro-btn">Open</a>
                     </li>
                     <li class="card">
-                        <div class="img"><img src="./resources/images/comingsoon.jpg" alt="A coming soon image" draggable="false"></div>
+                        <div class="img"><img src="./resources/images/comingsoon.jpg" alt="A coming soon image that says site under construction with a road sign depicting a man working." draggable="false"></div>
                         <h4>Coming Soon...</h4>
                         <span>I am currently working on a few things so this space will be filled soon.</span>
                         <br><br>
-                            <button class="caro-btn">Open</button>
+                            <a class="caro-btn">Open</a>
                     </li>
                     <li class="card">
-                        <div class="img"><img src="./resources/images/comingsoon.jpg" alt="A coming soon image" draggable="false"></div>
+                        <div class="img"><img src="./resources/images/comingsoon.jpg" alt="A coming soon image that says site under construction with a road sign depicting a man working." draggable="false"></div>
                         <h4>Coming Soon...</h4>
                         <span>I am currently working on a few things so this space will be filled soon.</span>
                         <br><br>
-                            <button class="caro-btn">Open</button>
+                            <a class="caro-btn">Open</a>
                     </li>
                 </ul>
-                <i id="right" class="arrow arrow-right"><ion-icon name="arrow-forward-circle-outline"></ion-icon></i>
+                <button id="right" class="arrow arrow-right"><ion-icon name="arrow-forward-circle-outline"></ion-icon></button>
             </div>   
         </section>
     
@@ -275,8 +275,8 @@
         <h3 class="alter">Alternatively send your own email with the link below.</h3>
 
         <section class="sayhello">
-        <button class="hello-btn"><a href="mailto:leetrewh@gmail.com">Say Hello<i class="hello-top"></i>
-            <i class="hello-bot"></i></a></button>
+        <a class="hello-btn" href="mailto:leetrewh@gmail.com">Say Hello<i class="hello-top"></i>
+            <i class="hello-bot"></i></a>
         </section>
         <br><br><br><br>
 </main>

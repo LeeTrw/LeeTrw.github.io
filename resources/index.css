@@ -308,7 +308,7 @@ header:hover:after {
     transform: scaleX(0);
 }
 
-header span { 
+header .outer-title { 
     position: relative;
     z-index: 3;
     display: block;
@@ -414,6 +414,7 @@ header span {
     width: 100%;
     height: 30rem;
     padding: 1.5rem 0rem;
+    margin-bottom: 9rem;
 }
 
 #abt-bck h2 {
@@ -492,6 +493,7 @@ header span {
     border-top: 1px solid black;
     border-bottom: 1px solid black;
     margin-top: 1rem;
+    margin-bottom: 7rem;
 }
 
 #skl-bck h2 {
@@ -618,7 +620,7 @@ header span {
     align-items: center;
     justify-content: center;
     color: black;
-    margin-bottom: 5rem;
+    margin-bottom: 9rem;
 }
 
 .wrapper {
@@ -628,12 +630,10 @@ header span {
     position: relative;
 }
 
-.wrapper i {
-    height: 2rem;
-    width: 2rem;
+.wrapper button {
+    height: 2.2rem;
+    width: 2.2rem;
     background-color: black;
-    text-align: center;
-    line-height: 3rem;
     border-radius: 50%;
     cursor: pointer;
     user-select: none;
@@ -643,15 +643,15 @@ header span {
     box-shadow: 0 3px 6px black;
 }
 
-.wrapper i:first-child {
+.wrapper button:first-child {
     left: 0.5rem;
 }
 
-.wrapper i:last-child {
+.wrapper button:last-child {
     right: 0.7rem;
 }
 
-.wrapper i ion-icon {
+.wrapper button ion-icon {
     height: 2rem;
     width: 2rem;
     color: #ffffff;
@@ -742,6 +742,9 @@ header span {
     background-color: transparent;
     border: none;
     margin-top: 1rem;
+    text-align: center;
+    text-decoration: none;
+    line-height: 1.6rem;
   }
   .caro-btn::before {
     content: '';
@@ -936,7 +939,6 @@ form .con-row .textarea {
 
 .submit-btn .data:hover .inner {
     transform: scaleX(1);
-    
 }
 
 .submit-btn .data:hover input {
@@ -958,6 +960,13 @@ form .con-row .textarea {
     text-transform: uppercase;
     letter-spacing: 1px;
     cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.submit-btn .data input:focus {
+    background-color: #3498db;
+    color: #fff;
+    font-size: 1.2rem;
     transition: all 0.3s ease-in-out;
 }
 
@@ -994,7 +1003,8 @@ form .con-row .textarea {
     align-items: center;
     justify-content: center;
     height: 4rem;
-    background-color: transparent;   
+    background-color: transparent;
+    text-align: center;
 }
 
 
@@ -1008,6 +1018,9 @@ form .con-row .textarea {
     font-weight: 500;
     transition: all 0.3s ease-in-out;
     position: absolute;
+    text-decoration: none;
+    color: white;
+    line-height: 4rem;
 }
 
 .hello-btn a {
@@ -1016,21 +1029,26 @@ form .con-row .textarea {
     transition: all 0.3s ease-in-out;
 }
 
-.hello-btn:hover a {
+.hello-btn:hover a,
+.hello-btn:focus a {
     color: #3498db;
     transition: all 0.3s ease-in-out;
 }
 
-.hello-btn:hover {
+.hello-btn:hover,
+.hello-btn:focus {
     box-shadow: 0rem 0rem 1rem #3498db;
     transition: all 0.3s ease-in-out;
     border: 3px solid #3498db;
 }
 
-.hello-btn:hover {
+.hello-btn:hover,
+.hello-btn:focus {
     color: #3498db;
     transition: all 0.3s ease-in-out;
+    outline: none;
 }
+
 
 .sayhello .hello-top {
     position: absolute;
@@ -1046,7 +1064,8 @@ form .con-row .textarea {
     transform: translate(50%) skewX(305deg);
 }
 
-.sayhello .hello-btn:hover .hello-top {
+.sayhello .hello-btn:hover .hello-top,
+.sayhello .hello-btn:focus .hello-top {
     width: 20px;
     top: -3px;
     left: 15%;
@@ -1068,7 +1087,8 @@ form .con-row .textarea {
     transform: translate(50%) skewX(305deg);
 }
 
-.sayhello .hello-btn:hover .hello-bot {
+.sayhello .hello-btn:hover .hello-bot,
+.sayhello .hello-btn:focus .hello-bot {
     width: 20px;
     bottom: -3px;
     right: 15%;
@@ -1080,6 +1100,7 @@ footer {
     font-size: 1rem;
     text-align: center;
     padding-bottom: 1rem;
+    margin-top: 3rem;
 }
 
 footer ion-icon {
