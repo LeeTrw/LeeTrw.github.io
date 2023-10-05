@@ -719,11 +719,12 @@ header .outer-title {
     border-radius: 0.4rem;
 }
 
-.card h4 {
+.card h3 {
     font-weight: 600;
     font-size: 1.5rem;
     margin: 20px 0 5px;
     text-decoration: underline;
+    color: white;
 }
 
 .card span {

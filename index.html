@@ -1,6 +1,9 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta name="description" content="Personal Profile Website of Lee Trewhitt. Showing current skills
+                                         and finished projects. The page ends with a contact form.">
+
     <link rel="stylesheet" href="./resources/index.css">
     <link rel="icon" href="./resources/images/lt logo2.jpg" type="image/x-icon">
     <title>LT Portfolio</title>
@@ -36,7 +39,7 @@
                 <li><a href="#skl-jump" class="skills">Skills</a></li>
                 <li><a href="#prj" class="projects">Projects</a></li>
                 <li><a href="#cnt" class="contact">Contact</a></li>
-                <li><a href="https://github.com/LeeTrw?tab=repositories" class="mbl-gitlink"><ion-icon name="logo-github"></ion-icon></a></li>
+                <li><a href="https://github.com/LeeTrw?tab=repositories" class="mbl-gitlink" aria-label="A link to my GitHub profile."><ion-icon name="logo-github"></ion-icon></a></li>
             </ul>
 
             <div class="menu">
@@ -91,7 +94,7 @@
                     </p>
 
                     <div class="headshot-container">
-                        <img src="./resources/images/headshot.png" alt="A headshot photo of myself.">
+                        <img src="./resources/images/headshot.webp" alt="A headshot photo of myself.">
                     </div>
                 </div>
         </section>
@@ -172,18 +175,18 @@
         <h2 id="prj">Projects</h2>
         <section class="caro-con">
             <div class="wrapper">
-                <button id="left" class="arrow arrow-left"><ion-icon name="arrow-back-circle-outline"></ion-icon></button>
+                <button id="left" class="arrow arrow-left" aria-label="scroll left"><ion-icon name="arrow-back-circle-outline"></ion-icon></button>
                 <ul class="carousel">
                     <li class="card">
-                        <div class="img"><img src="./resources/images/firstsite.jpg" alt="A screenshot of a fictional mechanics website I made as an early project." draggable="false"></div>
-                        <h4>An Early Project</h4>
+                        <div class="img"><img src="./resources/images/firstsite.webp" alt="A screenshot of a fictional mechanics website I made as an early project." draggable="false"></div>
+                        <h3>An Early Project</h3>
                         <span>A mechanics website for a side business my friend and I started during Coronavirus
                             when times were tough. Only created for practice.</span>
                             <a class="caro-btn" href="./resources/firstsite/index.html" target="_blank">Open</a>
                     </li>
                     <li class="card">
                         <div class="img"><img src="./resources/images/ridingclub.jpg" alt="A screenshot of a fictional website for a motorcycle riding club I made to practice HTML and CSS." draggable="false"></div>
-                        <h4>VN Riding Club</h4>
+                        <h3>VN Riding Club</h3>
                         <span>A ficticious website for a riding club in Vietnam to showcase what the club is about and 
                             what they offer.
                         </span>
@@ -192,34 +195,34 @@
                     </li>
                     <li class="card">
                         <div class="img"><img src="./resources/images/comingsoon.jpg" alt="A coming soon image that says site under construction with a road sign depicting a man working." draggable="false"></div>
-                        <h4>Coming Soon...</h4>
+                        <h3>Coming Soon...</h3>
                         <span>I am currently working on a few things so this space will be filled soon.</span>
                         <br><br>
                             <a class="caro-btn">Open</a>
                     </li>
                     <li class="card">
                         <div class="img"><img src="./resources/images/comingsoon.jpg" alt="A coming soon image that says site under construction with a road sign depicting a man working." draggable="false"></div>
-                        <h4>Coming Soon...</h4>
+                        <h3>Coming Soon...</h3>
                         <span>I am currently working on a few things so this space will be filled soon.</span>
                         <br><br>
                             <a class="caro-btn">Open</a>
                     </li>
                     <li class="card">
                         <div class="img"><img src="./resources/images/comingsoon.jpg" alt="A coming soon image that says site under construction with a road sign depicting a man working." draggable="false"></div>
-                        <h4>Coming Soon...</h4>
+                        <h3>Coming Soon...</h3>
                         <span>I am currently working on a few things so this space will be filled soon.</span>
                         <br><br>
                             <a class="caro-btn">Open</a>
                     </li>
                     <li class="card">
                         <div class="img"><img src="./resources/images/comingsoon.jpg" alt="A coming soon image that says site under construction with a road sign depicting a man working." draggable="false"></div>
-                        <h4>Coming Soon...</h4>
+                        <h3>Coming Soon...</h3>
                         <span>I am currently working on a few things so this space will be filled soon.</span>
                         <br><br>
                             <a class="caro-btn">Open</a>
                     </li>
                 </ul>
-                <button id="right" class="arrow arrow-right"><ion-icon name="arrow-forward-circle-outline"></ion-icon></button>
+                <button id="right" class="arrow arrow-right" aria-label="scroll right"><ion-icon name="arrow-forward-circle-outline"></ion-icon></button>
             </div>   
         </section>
     
@@ -230,13 +233,13 @@
                 
                 <div class="con-row">
                     <div class="data">
-                        <input type="text" required>
+                        <input type="text" aria-label="First name" required>
                         <div class="underline"></div>
                         <label>First Name</label>
                     </div>
                     
                     <div class="data">
-                        <input type="text" required>
+                        <input type="text" aria-label="Last Name" required>
                         <div class="underline"></div>
                         <label>Last Name</label>
                     </div>  
@@ -244,7 +247,7 @@
                 
                 <div class="con-row">
                     <div class="data">
-                        <input type="text" required>
+                        <input type="text" aria-label="Email" required>
                         <div class="underline"></div>
                         <label>Email</label>
                     </div>
@@ -252,7 +255,7 @@
 
                 <div class="con-row">
                     <div class="data textarea">
-                        <textarea cols="30" rows="10" required></textarea>
+                        <textarea cols="30" rows="10" aria-label="Write your message" required></textarea>
                         <div class="underline"></div>
                         <label>Write your message</label>
                     </div>
@@ -261,7 +264,7 @@
                 <div class="con-row submit-btn">
                     <div class="data">
                         <div class="inner"></div>
-                        <input type="submit" value="submit">
+                        <input type="submit" value="submit" aria-label="Submit">
                     </div>
                 </div>
 
@@ -272,7 +275,7 @@
     </section>
 
 
-        <h3 class="alter">Alternatively send your own email with the link below.</h3>
+        <h4 class="alter">Alternatively send your own email with the link below.</h4>
 
         <section class="sayhello">
         <a class="hello-btn" href="mailto:leetrewh@gmail.com">Say Hello<i class="hello-top"></i>
@@ -282,7 +285,7 @@
 </main>
 
     <footer>
-        <a href="https://github.com/LeeTrw?tab=repositories"><ion-icon name="logo-github"></ion-icon></a>
+        <a href="https://github.com/LeeTrw?tab=repositories" aria-label="A link to my GitHub profile."><ion-icon name="logo-github"></ion-icon></a>
         <p>Lee Trewhitt © 2023. All rights reserved.</p>
     </footer>
 
