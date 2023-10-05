@@ -821,7 +821,7 @@ header .outer-title {
     font-size: 3rem;
     font-weight: 600;
     text-align: center;
-    color: #3498db;
+    color: white;
     text-shadow: 0 0 1rem #3498db;
 }
 
@@ -954,7 +954,7 @@ form .con-row .textarea {
     z-index: 2;
     background: none;
     border: none;
-    color: #3498db;
+    color: white;
     text-shadow: 0 0 0.5rem #3498db;
     font-size: 1rem;
     font-weight: 500;
