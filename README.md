@@ -20,6 +20,7 @@ I plan to update the site and its code as my skills develop as well as adding fu
 
 
 <br>
+
 ## How to View the Site
 The easiest way to view the site is through the direct link or URL below. 
 
@@ -29,6 +30,7 @@ Link - [My Personal Portfolio Website](https://leetrw.github.io/)
 URL - https://leetrw.github.io/
 
 <br>
+
 ## Support 
 
 If you wish to contact me for any reason, then you can use the email below or contact form / link on the site to send me a direct email as this will be checked most frequently.
