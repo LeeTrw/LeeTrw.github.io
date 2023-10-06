@@ -40,7 +40,7 @@ h2 {
 
 .logo-container img {
     height: 7rem;
-    width: auto;
+    width: 7rem;
     padding: 0.5rem 0.5rem;
     margin-top: auto;
     margin-bottom: auto;
@@ -449,7 +449,7 @@ header .outer-title {
 
 .headshot-container img {
     height: 14rem;
-    width: auto;
+    width: 11.46rem;
     border-radius: 1rem;
     object-fit: cover;
 }
@@ -713,8 +713,8 @@ header .outer-title {
 }
 
 .card .img img {
-    width: 99%;
-    height: 99%;
+    width: 18.45rem;
+    height: 14rem;
     object-fit: cover;
     border-radius: 0.4rem;
 }
