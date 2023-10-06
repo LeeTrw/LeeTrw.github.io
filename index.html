@@ -7,14 +7,17 @@
     <link rel="stylesheet" href="./resources/index.css">
     <link rel="icon" href="./resources/images/lt logo2.jpg" type="image/x-icon">
     <title>LT Portfolio</title>
-    
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;800&display=swap" rel="stylesheet">
+    <style>
+        @font-face {
+            font-family: 'RalewayD'; 
+            src: url('./resources/fonts/Raleway-VariableFont_wght.ttf') format('truetype');
+        }
+        @font-face {
+            font-family: 'WorkD';
+            src: url('./resources/fonts/WorkSans-VariableFont_wght.ttf') format('truetype');
+        }
+    </style>
 
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
@@ -26,7 +29,7 @@
     <!-----------------------------navigation bar---------------------------------->
         <nav class="nav-bar">  
             <div class="logo-container">
-                <img src="./resources/images/lt logo2.jpg" alt="My personal Logo">
+                <img src="./resources/images/lt logo2-small.webp" alt="My personal Logo">
             </div>
 
             <div class="toggle-icon">
@@ -94,7 +97,7 @@
                     </p>
 
                     <div class="headshot-container">
-                        <img src="./resources/images/headshot.webp" alt="A headshot photo of myself.">
+                        <img src="./resources/images/headshot-small.webp" alt="A headshot photo of myself.">
                     </div>
                 </div>
         </section>
@@ -104,11 +107,11 @@
             <h2>Skills</h2>
             <div class="skll-con">
                     <div class="skll">
-                        <img class="web-img" src="./resources/images/HTML5.png" alt="The HTML5 Logo" tabindex="0">
-                        <img src="./resources/images/CSS3.png" alt="The CSS3 Logo">
-                        <img class="java-img" src="./resources/images/JavaScript.png" alt="The JavaScript Logo" tabindex="0">
-                        <img src="./resources/images/node2.png" alt="The Node Logo">
-                        <img class="git-img" src="./resources/images/GitHub.png" alt="The GitHub Logo" tabindex="0">
+                        <img class="web-img" src="./resources/images/HTML5-small.webp" alt="The HTML5 Logo" tabindex="0">
+                        <img src="./resources/images/CSS3-small.webp" alt="The CSS3 Logo">
+                        <img class="java-img" src="./resources/images/JavaScript-small.webp" alt="The JavaScript Logo" tabindex="0">
+                        <img src="./resources/images/node2-small.webp" alt="The Node Logo">
+                        <img class="git-img" src="./resources/images/GitHub-small.webp" alt="The GitHub Logo" tabindex="0">
                         <img src="./resources/images/gitbash.svg" alt="The Gitbash Logo">
                     </div>
             </div>
@@ -136,8 +139,8 @@
             <div class="dummy">
                 <div class="skll-con-mbl">
                     <div class="mbl-img">
-                        <img class="web-img" src="./resources/images/HTML5.png" alt="The HTML5 Logo">
-                        <img class="web-img" src="./resources/images/CSS3.png" alt="The CSS3 Logo">
+                        <img class="web-img" src="./resources/images/HTML5-small.webp" alt="The HTML5 Logo">
+                        <img class="web-img" src="./resources/images/CSS3-small.webp" alt="The CSS3 Logo">
                     </div>
 
                     <div class="desc-mbl">
@@ -147,8 +150,8 @@
                     </div>
 
                     <div class="mbl-img">
-                        <img class="java-img" src="./resources/images/JavaScript.png" alt="The JavaScript Logo">
-                        <img class="node-img" src="./resources/images/node2.png" alt="The Node Logo">
+                        <img class="java-img" src="./resources/images/JavaScript-small.webp" alt="The JavaScript Logo">
+                        <img class="node-img" src="./resources/images/node2-small.webp" alt="The Node Logo">
                     </div>  
 
                     <div class="desc-mbl">
@@ -158,7 +161,7 @@
                     </div>
 
                     <div class="mbl-img">
-                        <img class="git-img" src="./resources/images/GitHub.png" alt="The GitHub Logo">
+                        <img class="git-img" src="./resources/images/GitHub-small.webp" alt="The GitHub Logo">
                         <img class="git-img" src="./resources/images/gitbash.svg" alt="The GitBash Logo">
                     </div>
 
@@ -178,14 +181,14 @@
                 <button id="left" class="arrow arrow-left" aria-label="scroll left"><ion-icon name="arrow-back-circle-outline"></ion-icon></button>
                 <ul class="carousel">
                     <li class="card">
-                        <div class="img"><img src="./resources/images/firstsite.webp" alt="A screenshot of a fictional mechanics website I made as an early project." draggable="false"></div>
+                        <div class="img"><img src="./resources/images/firstsite-small.webp" alt="A screenshot of a fictional mechanics website I made as an early project." draggable="false"></div>
                         <h3>An Early Project</h3>
                         <span>A mechanics website for a side business my friend and I started during Coronavirus
                             when times were tough. Only created for practice.</span>
                             <a class="caro-btn" href="./resources/firstsite/index.html" target="_blank">Open</a>
                     </li>
                     <li class="card">
-                        <div class="img"><img src="./resources/images/ridingclub.jpg" alt="A screenshot of a fictional website for a motorcycle riding club I made to practice HTML and CSS." draggable="false"></div>
+                        <div class="img"><img src="./resources/images/ridingclub-small.webp" alt="A screenshot of a fictional website for a motorcycle riding club I made to practice HTML and CSS." draggable="false"></div>
                         <h3>VN Riding Club</h3>
                         <span>A ficticious website for a riding club in Vietnam to showcase what the club is about and 
                             what they offer.
@@ -194,28 +197,28 @@
                         <a class="caro-btn" href="./resources/ridingclub/index.html" target="_blank">Open</a>
                     </li>
                     <li class="card">
-                        <div class="img"><img src="./resources/images/comingsoon.jpg" alt="A coming soon image that says site under construction with a road sign depicting a man working." draggable="false"></div>
+                        <div class="img"><img src="./resources/images/comingsoon-small.webp" alt="A coming soon image that says site under construction with a road sign depicting a man working." draggable="false"></div>
                         <h3>Coming Soon...</h3>
                         <span>I am currently working on a few things so this space will be filled soon.</span>
                         <br><br>
                             <a class="caro-btn">Open</a>
                     </li>
                     <li class="card">
-                        <div class="img"><img src="./resources/images/comingsoon.jpg" alt="A coming soon image that says site under construction with a road sign depicting a man working." draggable="false"></div>
+                        <div class="img"><img src="./resources/images/comingsoon-small.webp" alt="A coming soon image that says site under construction with a road sign depicting a man working." draggable="false"></div>
                         <h3>Coming Soon...</h3>
                         <span>I am currently working on a few things so this space will be filled soon.</span>
                         <br><br>
                             <a class="caro-btn">Open</a>
                     </li>
                     <li class="card">
-                        <div class="img"><img src="./resources/images/comingsoon.jpg" alt="A coming soon image that says site under construction with a road sign depicting a man working." draggable="false"></div>
+                        <div class="img"><img src="./resources/images/comingsoon-small.webp" alt="A coming soon image that says site under construction with a road sign depicting a man working." draggable="false"></div>
                         <h3>Coming Soon...</h3>
                         <span>I am currently working on a few things so this space will be filled soon.</span>
                         <br><br>
                             <a class="caro-btn">Open</a>
                     </li>
                     <li class="card">
-                        <div class="img"><img src="./resources/images/comingsoon.jpg" alt="A coming soon image that says site under construction with a road sign depicting a man working." draggable="false"></div>
+                        <div class="img"><img src="./resources/images/comingsoon-small.webp" alt="A coming soon image that says site under construction with a road sign depicting a man working." draggable="false"></div>
                         <h3>Coming Soon...</h3>
                         <span>I am currently working on a few things so this space will be filled soon.</span>
                         <br><br>
