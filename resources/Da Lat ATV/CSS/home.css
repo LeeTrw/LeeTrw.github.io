@@ -1,0 +1,528 @@
+:root {
+    --lightgreen: #75ad42;
+    --darkgreen: #015e32;
+}
+
+* {
+    box-sizing: border-box;
+}
+/* ---------------title */
+.title {
+    width: 100%;
+    height: 100vh;
+    background-image: url(/images/home/title-bck.jpg);
+    background-position: bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    font-size: 5rem;
+    transform: scaleY(1.2);
+    letter-spacing: 3px;
+    line-height: 5rem;
+    text-transform: uppercase;
+    font-family: 'Bebas', sans-serif;
+    background-color: var(--darkgreen);
+    padding: 0.5rem 2rem;
+    border-radius: 1rem;
+    color: #fff;
+}
+
+#span {
+    font-family: 'Montserrat';
+    font-stretch: ultra-condensed;
+    font-weight: 800;
+}
+
+/* ----------------daily tours accordion */
+
+.tour-title-con {
+    width: 80%;
+    height: 5rem;
+    margin: auto;
+    position: relative;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h2 {
+    text-align: center;
+    font-size: 2.6rem;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #fff;
+    padding: 0.8rem;
+}
+
+.line {
+    height: 2px;
+    width: 100%;
+    background-color: #000;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.acc-con {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 75%;
+    margin: auto;
+}
+
+.accordion {
+    width: 100%;
+    margin-top: 1rem;
+}
+
+.accordion .contentBx {
+    position: relative;
+    margin: 1.2rem 1.2rem;
+}
+.accordion .contentBx .label {
+    position: relative;
+    padding: 1rem;
+    background-color: #75ad42;
+    cursor: pointer;
+    height: fit-content;
+    font-size: 1.2rem;
+    /* display: flex;
+    align-items: center; */
+    border-radius: 0.5rem;
+    line-height: 1.5;
+    font-weight: 500;
+}
+
+.accordion .contentBx .label::before {
+    content: '+';
+    font-size: 2.5rem;
+    position: absolute;
+    top: 50%;
+    right: 1rem;
+    transform: translateY(-50%);
+}
+
+.accordion .contentBx.active .label::before {
+    content: '-';
+    font-size: 3.5rem;
+}
+
+.accordion .contentBx .content {
+    position: relative;
+    background-color: honeydew;
+    height: 0;
+    overflow: hidden;
+    transition: 0.5s;
+    overflow-y: auto;
+    letter-spacing: 1px;
+    line-height: 1.5;
+    font-size: 1.2rem;
+    font-weight: 500;
+    border-radius: 0 0 0.5rem 0.5rem;
+    margin-top: -0.2rem;
+}
+.accordion .contentBx.active .short {
+    height: 22rem;
+    padding: 2rem;
+}
+.accordion .contentBx.active .long {
+    height: 28rem;
+    padding: 2rem;
+}
+.accordion .contentBx.active .medium {
+    height: 26rem;
+    padding: 2rem;
+}
+
+
+.accordion .contentBx .content .nha-imgs,
+.accordion .contentBx .content .coff-imgs {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 10rem;
+    margin-top: 1rem;
+}
+
+.accordion .contentBx .content .nha-imgs img {
+    width: 30%;
+    height: 10rem;
+    object-fit: cover;
+    border-radius: 0.5rem;
+}
+
+.accordion .contentBx .content .coff-imgs img {
+    width: 30%;
+    height: 10rem;
+    object-fit: cover;
+    border-radius: 0.5rem;
+}
+
+
+
+
+/* --------------------- contact details */
+
+.daily-contact {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 3rem;
+    margin-bottom: 7rem;
+}
+
+.daily-contact p {
+    background-color: #015e32;
+    color: #fff;
+    padding: 0.5rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    border-radius: 0.5rem;
+}
+
+/* ---------------the tour */
+
+
+.thetour {
+    width: 80%;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin: auto;
+    margin-top: 4rem;
+    margin-bottom: 3rem;
+}
+
+.tour-start-img {
+    border: 3px solid var(--lightgreen);
+    padding: 1rem;
+    border-radius: 1rem;
+    width: 40%;
+    height: fit-content;
+}
+
+.thetour img {
+    width: 100%;
+    height: auto;
+    border-radius: 1rem;
+}
+
+.tour-info {
+    padding-left: 2rem;
+    width: 60%;
+}
+
+.tour-info h3 {
+    font-size: 1.6rem;
+    margin-bottom: 2rem;
+}
+
+.tour-info p,
+.tour-info-2 p {
+    line-height: 1.8;
+    font-size: 1.1rem;
+    word-spacing: 2px;
+}
+/* ---part 2 */
+.tour-info-2 {
+    padding-right: 2rem;
+    width: 60%;
+}
+
+.tour-start-img-2 {
+    border: 3px solid var(--lightgreen);
+    padding: 1rem;
+    border-radius: 1rem;
+    width: 40%;
+    height: fit-content;
+}
+
+.thetour .img-2 {
+    height: 20rem;
+    object-fit: cover;
+}
+
+/* -------------------maps */
+
+.maps-title {
+    text-align: center;
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+    margin-top: 7rem;
+}
+
+.gmaps {
+    width: 70%;
+    display: flex;
+    margin: auto;
+    text-align: center;
+    margin-bottom: 8rem;
+}
+
+.maps {
+    display: flex;
+    flex-direction: column;
+    background-color: #015e32;
+    width: 50%;
+    color: #fff;
+    border-radius: 1rem;
+}
+
+.maps p {
+    margin-top: 1rem;
+}
+
+.gmaps iframe {
+    width: 90%;
+    height: 12rem;
+    margin: 1rem;
+    border-radius: 1rem;
+}
+
+.map-info {
+    width: 50%;
+    font-size: 1.4rem;
+    margin: auto;
+    line-height: 2.2rem;
+    font-weight: 500;
+}
+
+/* ----------------------- contact */
+
+
+.contact-con {
+    width: 60%;
+    margin: auto;
+    margin-top: 2rem;
+    background-color: #75ad42;
+    border-radius: 1rem;
+    padding: 1.5rem;
+    margin-bottom: 6rem;
+}
+
+.contact-con h4 {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.contact-con p {
+    text-align: center;
+    font-weight: 500;
+    word-spacing: 1px;
+    line-height: 1.5;
+}
+
+form {
+    width: 100%;
+    height: 25rem;
+    margin-top: 1rem;
+    padding-top: 2rem;
+    color: #fff;
+}
+
+.contact-row {
+    width: 100%;
+    height: fit-content;
+    margin: 0rem 0rem 2.8rem 0rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.half-width {
+    width: 48%;
+}
+
+.full-width {
+    width: 100%;
+}
+
+form input {
+    width: 100%;
+    height: 2.5rem;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    background-color: transparent;
+    border: none;
+    border: 2px solid #000;
+    padding: 0.6rem;
+    border-radius: 0.5rem;
+}
+
+form textarea {
+    width: 100%;
+    height: 6.5rem;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    resize: none;
+    background-color: transparent;
+    border: 2px solid black;
+    padding: 0.6rem;
+    border-radius: 0.5rem;
+}
+
+#submit-btn {
+    width: 10rem;
+    height: 2.5rem;
+    color: #fff;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    margin-top: -1rem;
+    background-color: #000;
+}
+
+#submit-btn:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+/* label animation */
+
+.data,
+.textarea {
+    position: relative;
+}
+
+.data label {
+    position: absolute;
+    top: 25%;
+    left: 0.5rem;
+    transition: all 0.3s ease-in-out;
+    pointer-events: none;
+}
+
+.textarea label {
+    position: absolute;
+    top: 10%;
+    left: 0.5rem;
+    transition: all 0.3s ease-in-out;
+    pointer-events: none;
+}
+
+.data input:focus ~ label,
+.data input:valid ~ label {
+  transform: translateY(-32px);  
+  font-size: 14px;
+} 
+
+.textarea textarea:focus ~ label,
+.textarea textarea:valid ~ label {
+    transform: translateY(-35px);  
+    font-size: 14px;
+}
+
+/* ---------------------- carousel */
+.caro-con {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 4rem;
+    padding-right: 4rem;
+    width: 100%;
+    box-sizing: border-box;
+    overflow: hidden;
+    margin-top: 10rem;
+    margin-bottom: 10rem;
+}
+
+.wrapper {
+    width: 100%;
+    position: relative;
+}
+
+.wrapper .arrow {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+}
+
+.wrapper .arrow-left {
+    left: -2rem;
+    display: none;
+}
+
+.wrapper .arrow-right {
+    right: -2rem;
+}
+
+.wrapper .carousel {
+    white-space: nowrap;
+    cursor: pointer;
+    overflow: hidden;
+    font-size: 0px;
+    scroll-behavior: smooth;
+    cursor: grab;
+}
+
+.carousel.dragging {
+    cursor: grabbing;
+    scroll-behavior: auto;
+}
+
+.carousel img {
+    height: 340px;
+    width: calc(100% / 3);
+    object-fit: cover;
+    margin-left: 1rem;
+    pointer-events: none;
+    user-select: none;
+}
+
+.carousel img:first-child {
+    margin-left: 0rem;
+}
+
+@media screen and (max-width: 900px) {
+    .caro-con {
+        padding-left: 3rem;
+        padding-right: 3rem;
+    } 
+    
+    .carousel img {
+        width: calc(100% / 2);
+    }
+}
+@media screen and (max-width: 550px) {
+    .caro-con {
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }   
+    
+    .carousel img {
+        width: 100%;
+    }
+}
+
+
+.silhouette {
+    width: 100%;
+    padding: 0.1rem;
+    overflow: hidden; 
+    margin-top: 3rem;
+}
+
+.silhouette img {
+    animation: scrollImage 8s linear infinite;
+}
+
+@keyframes scrollImage {
+    from {
+        transform: translateX(-110%); /* Start position */
+    }
+    to {
+        transform: translateX(1500%); /* End position */
+    }
+}

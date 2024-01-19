@@ -1,0 +1,274 @@
+:root {
+    --lightgreen: #75ad42;
+    --darkgreen: #015e32;
+}
+
+@font-face {
+    font-family: 'Bebas';
+    src: url(/fonts/BebasNeue-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url(/fonts/Montserrat-VariableFont_wght.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #fff;
+    width: 100%;
+    max-width: 100vw;
+    height: 100%;
+    font-family: 'Montserrat', sans-serif;
+    overflow-x: hidden;
+}
+
+header {
+    width: 100%;
+    height: 4.5rem;
+    background-color: var(--darkgreen);
+    display: flex;
+    align-items: center;
+    z-index: 1;
+}
+
+.logo-con {
+    width: 85%;
+    height: 4.5rem;
+}
+
+.logo-con img {
+    height: 8rem;
+    width: auto;
+    margin-left: 0.5rem;
+    margin-top: 0.5rem;
+}
+
+/* .mbl-con {
+    display: flex;
+    align-items: center;
+    height: 4.5rem;
+    width: 85%;
+}
+
+nav {
+    width: 84%;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    font-size: 1.2rem;
+}
+
+nav ul li {
+    margin-right: 3rem;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    padding-bottom: 0.2rem;
+}
+
+nav ul li a:hover {
+    border-bottom: 1px solid #fff;
+} */
+
+.social-con {
+    width: 15%;
+    height: 4.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding-right: 1rem;
+}
+
+.social-con img {
+    height: 3rem;
+    width: auto;
+    cursor: pointer;
+}
+
+/* .mbl-menu {
+    display: none;
+} */
+
+
+
+
+
+
+
+
+footer {
+    width: 100%;
+    height: 15rem;
+    background-image: url('/images/main/footer.JPG');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    display: flex;
+    place-content: center; 
+    
+}
+
+footer .contact {
+    background-color: rgba(255, 255, 255, 0.6);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    place-content: center; 
+    font-weight: 600;
+}
+
+.contact h3 {
+    text-decoration: underline;
+}
+
+.contact p {
+    margin: 0.5rem;
+}
+
+.contact p a {
+    color: #000;
+}
+
+
+@media screen and (max-width: 1028px) {
+    .social-con img {
+        height: 2.5rem;
+    }
+}
+
+@media screen and (max-width: 770px) {
+    header {
+        position: fixed;
+    }
+    
+    .mbl-menu {
+        display: block;
+        width: 75%;
+        height: 4.5rem;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        position: relative;
+        padding-right: 1rem;
+        z-index: 1;
+        cursor: pointer;
+    }
+
+    .mbl-menu img {
+        position: absolute;
+        height: 3.5rem;
+        width: auto;
+    }
+
+    .hide {
+        display: none;
+    }
+
+    .logo-con {
+        width: 35%;
+    }
+
+    .mbl-con {
+        position: absolute;
+        flex-direction: column;
+        align-items: center;
+        height: 100vh;
+        width: 60vw;
+        top: 0;
+        right: -60vw;
+        background-color: var(--lightgreen);
+        transition: right 0.5s ease-in-out;  
+    }
+
+    .mbl-con.open-menu {
+        right: 0;
+    }
+
+
+    nav {
+        width: 80%;
+        margin-top: 5rem;
+    }
+    
+    nav ul {
+        display: flex;
+        justify-content: flex-end;
+
+        flex-direction: column;
+    }
+    
+    nav ul li {
+        margin-right: 0rem;
+        margin-bottom: 3rem;
+    }
+
+    nav ul li a {
+        font-size: 2rem;
+    }
+    
+    .social-con {
+        width: 70%;
+        height: 4.5rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        padding-right: 0rem;
+    }
+    
+    .social-con img {
+        height: 4rem;
+        width: auto;
+    }
+}
+
+@media screen and (max-width: 770px) and (orientation: landscape) {
+    .mbl-con {
+        width: 40vw;
+    }
+    
+    nav ul li {
+        margin-right: 0rem;
+        margin-bottom: 1.5rem;
+    }
+
+    nav ul li a {
+        font-size: 1.2rem;
+    }
+}
+
+
+@media screen and (max-width: 450px) {
+    .logo-con {
+        width: 25%;
+    }
+    
+    .logo-con img {
+        height: 6rem;
+    }
+   
+   
+    nav ul li a {
+        font-size: 1.2rem;
+    }
+
+    .social-con {
+        width: 80%;
+    }
+    
+    .social-con img {
+        height: 3rem;
+    }
+}
