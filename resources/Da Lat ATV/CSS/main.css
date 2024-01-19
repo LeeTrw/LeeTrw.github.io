@@ -5,12 +5,12 @@
 
 @font-face {
     font-family: 'Bebas';
-    src: url(/fonts/BebasNeue-Regular.ttf);
+    src: url(../fonts/BebasNeue-Regular.ttf) format('truetype');
 }
 
 @font-face {
     font-family: 'Montserrat';
-    src: url(/fonts/Montserrat-VariableFont_wght.ttf);
+    src: url(../fonts/Montserrat-VariableFont_wght.ttf) format('truetype');
 }
 
 * {
@@ -109,8 +109,8 @@ nav ul li a:hover {
 
 footer {
     width: 100%;
-    height: 15rem;
-    background-image: url('/images/main/footer.JPG');
+    height: 16rem;
+    background-image: url('../images/main/footer.JPG');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -140,6 +140,15 @@ footer .contact {
 
 .contact p a {
     color: #000;
+    border: 1px solid #000;
+    text-decoration: none;
+    padding: 0.2rem  0.5rem;
+    background-color: #75ad42;
+}
+
+.contact .copyright {
+    margin-top: 1.5rem;
+    font-size: 0.7rem;
 }
 
 
