@@ -6,10 +6,11 @@
 * {
     box-sizing: border-box;
 }
+
 /* ---------------title */
 .title {
     width: 100%;
-    height: 100vh;
+    height: 95vh;
     background-image: url(../images/home/title-bck.jpg);
     background-position: bottom;
     background-size: cover;
@@ -19,7 +20,7 @@
     justify-content: center;
 }
 
-h1 {
+.tt-desk {
     font-size: 5rem;
     transform: scaleY(1.2);
     letter-spacing: 3px;
@@ -32,10 +33,71 @@ h1 {
     color: #fff;
 }
 
+.tt-mbl {
+    display: none;
+}
+
 #span {
     font-family: 'Montserrat';
     font-stretch: ultra-condensed;
     font-weight: 800;
+}
+
+@media screen and (max-width: 1028px) {    
+    .tt-desk {
+        display: none;
+    }
+
+    .tt-mbl {
+        display: block;
+        font-size: 6rem;
+        transform: scaleY(1.2);
+        letter-spacing: 3px;
+        line-height: 5.5rem;
+        text-transform: uppercase;
+        font-family: 'Bebas', sans-serif;
+        background-color: var(--darkgreen);
+        padding: 2rem 2rem;
+        border-radius: 1rem;
+        color: #fff;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 770px) {
+    .tt-mbl {
+        font-size: 5rem;
+        line-height: 4.5rem;
+    }
+} 
+
+@media screen and (max-width: 770px) and (orientation: landscape) {
+    .tt-mbl {
+        font-size: 3rem;
+        line-height: 3rem;
+        padding: 1rem 1rem;
+        border-radius: 1rem;
+        margin: 1rem;
+    }
+} 
+
+@media screen and (max-width: 450px) {    
+    .title {
+        margin-top: -5%;
+    }
+    
+    .tt-mbl {
+        font-size: 3rem;
+        line-height: 3rem;
+        padding: 1rem 1rem;
+        border-radius: 1rem;
+        margin: 1rem;
+    }
+}
+@media screen and (max-width: 400px) {
+    .tt-mbl {
+        max-width: 80%;
+    }
 }
 
 /* ----------------daily tours accordion */
@@ -169,7 +231,75 @@ h2 {
 }
 
 
+@media screen and (max-width: 1028px) {
+    .tour-title-con {
+    width: 90%;
+    }
+    .acc-con {
+        width: 90%;
+    }
+}
 
+
+/* @media screen and (max-width: 770px) and (orientation: landscape) */
+
+
+@media screen and (max-width: 450px) {
+    .tour-title-con {
+        width: 85%;
+        height: 3rem;
+        margin-top: 2rem;
+    }    
+    
+    .tour-title-con h2 {
+        font-size: 1.6rem;
+        padding: 0.5rem;
+    }
+
+    .accordion {
+        margin-top: 0rem;
+    }
+        
+    .acc-con {
+        width: 96%;
+    }
+
+    .accordion .contentBx .label {
+        font-size: 0.8rem;    
+    }
+    
+    .accordion .contentBx .label::before {
+        font-size: 2rem;
+    }
+    
+    .accordion .contentBx.active .label::before {
+        font-size: 2.5rem;
+    }
+
+    .accordion .contentBx.active .short,
+    .accordion .contentBx.active .medium,
+    .accordion .contentBx.active .long {
+        height: 22rem;
+        padding: 1rem;
+    }
+   
+    .accordion .contentBx .content .nha-imgs,
+    .accordion .contentBx .content .coff-imgs {
+        justify-content: center;
+        flex-direction: column;
+        height: fit-content;
+    }
+    
+    .accordion .contentBx .content .nha-imgs img {
+        width: 100%;
+        margin-bottom: 0.5rem;
+    }
+    
+    .accordion .contentBx .content .coff-imgs img {
+        width: 100%;
+        margin-bottom: 0.5rem;
+    }
+}
 
 /* --------------------- contact details */
 
@@ -189,6 +319,31 @@ h2 {
     margin-right: 1rem;
     border-radius: 0.5rem;
 }
+
+@media screen and (max-width: 770px) {
+    .daily-contact {
+        flex-direction: column;
+        margin-top: 1rem;
+    }
+    
+    .daily-contact p {
+        width: 50%;
+        text-align: center;
+        margin-top: 1rem;
+        padding: 0.5rem;
+        margin-left: 0rem;
+        margin-right: 0rem;
+        border-radius: 0.5rem;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .daily-contact p {
+        width: 70%;
+        margin-top: 0.8rem;
+    }
+} 
+
 
 /* ---------------the tour */
 
@@ -253,6 +408,62 @@ h2 {
     object-fit: cover;
 }
 
+@media screen and (max-width: 1028px) {
+    .thetour {
+        width: 90%;
+        flex-direction: column;
+    }
+    
+    .tour-start-img {
+        width: 100%;
+        height: 25rem;
+        overflow: hidden;
+    }
+    
+    .thetour img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    
+    .tour-info {
+        padding-left: 0rem;
+        width: 90%;
+        margin: auto;
+    }
+    
+    .tour-info h3 {
+        margin-top: 2rem;
+        text-align: center;
+    }
+    
+    .tour-info p,
+    .tour-info-2 p {
+        line-height: 1.8;
+        font-size: 1.1rem;
+        word-spacing: 2px;
+    }
+    /* ---part 2 */
+    .tour-info-2 {
+        padding-right: 0rem;
+        width: 90%;
+        margin: auto;
+        margin-bottom: 2rem;
+    }
+    
+    .tour-start-img-2 {
+        width: 100%;
+        height: 30rem;
+        overflow: hidden;
+    }
+    
+    .thetour .img-2 {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
 /* -------------------maps */
 
 .maps-title {
@@ -297,6 +508,48 @@ h2 {
     line-height: 2.2rem;
     font-weight: 500;
 }
+
+@media screen and (max-width: 1028px) {
+    .maps-title {
+        font-size: 1.6rem;
+    }
+    
+    .gmaps {
+        flex-direction: column;
+    }
+    
+    .maps {
+        width: 100%;
+        padding: 1rem;
+    }
+    
+    .maps p {
+        margin-top: 0rem;
+        font-size: 1.4rem;
+    }
+    
+    .gmaps iframe {
+        width: 100%;
+        height: 14rem;
+        margin: 0rem;
+    }
+    
+    .map-info {
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .gmaps {
+        width: 80%; 
+    }
+
+    .map-info {
+        width: 70%;
+    }
+}
+
 
 /* ----------------------- contact */
 
@@ -422,6 +675,49 @@ form textarea {
     font-size: 14px;
 }
 
+@media screen and (max-width: 1028px) {
+    .contact-con {
+        width: 85%;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .contact-con {
+        width: 90%;
+        padding: 1rem;
+    }
+        
+    form {
+        height: 28rem;
+        margin-top: 0rem;
+        padding-top: 0rem;
+    }
+    
+    .contact-row {
+        margin: 0rem 0rem 2rem 0rem;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    
+    .half-width {
+        width: 100%;
+        margin-top: 2rem;
+    }
+    
+    .full-width {
+        width: 100%;
+    }
+    
+    form textarea {
+        height: 8rem;
+    }
+    
+    #submit-btn {
+        width: 100%;
+    }
+}
+
+
 /* ---------------------- carousel */
 .caro-con {
     display: flex;
@@ -526,3 +822,11 @@ form textarea {
         transform: translateX(1500%); /* End position */
     }
 }
+
+@media screen and (max-width: 770px) {
+    .silhouette, 
+    .silhouette img {
+        display: none;
+    }
+}
+
